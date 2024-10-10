@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
-            $table->varchar('nama_menu');
-            $table->varchar('harga');
+            $table->string('nama_menu');
+            $table->decimal('harga', 8 ,2);
             $table->timestamps();
         });
     }
