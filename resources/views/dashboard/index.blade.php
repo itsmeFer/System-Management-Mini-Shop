@@ -4,42 +4,42 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
-        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar" style="height: 100vh;">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar" style="height: 100vh;">
             <div class="position-sticky">
-                <h5 class="mt-3 text-center">Fat Fat 88</h5> <!-- Ganti di sini -->
-                <ul class="nav flex-column">
+                <h5 class="mt-3 text-center text-white">Fat Fat 88</h5> <!-- Ganti nama di sini -->
+                <ul class="nav flex-column mt-4">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('dashboard') }}">
+                        <a class="nav-link active text-white" aria-current="page" href="{{ route('dashboard') }}">
                             <span data-feather="home"></span>
                             Dashboard
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link text-white" href="#">
                             <span data-feather="file"></span>
                             Orders
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link text-white" href="{{ route('products.index') }}">
                             <span data-feather="shopping-cart"></span>
-                            Products
+                            Products <!-- Link ke halaman Products -->
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('users.index') }}">
+                        <a class="nav-link text-white" href="{{ route('users.index') }}">
                             <span data-feather="users"></span>
                             Pengguna
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link text-white" href="#">
                             <span data-feather="bar-chart-2"></span>
                             Reports
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link text-white" href="#">
                             <span data-feather="layers"></span>
                             Integrations
                         </a>
@@ -47,7 +47,6 @@
                 </ul>
             </div>
         </nav>
-        
 
         <!-- Main content -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
