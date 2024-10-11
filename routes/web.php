@@ -34,3 +34,5 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
     Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');

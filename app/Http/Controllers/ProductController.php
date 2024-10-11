@@ -1,15 +1,22 @@
 <?php
 
+// app/Http/Controllers/ProductController.php
 namespace App\Http\Controllers;
 
-use App\Models\Menu;
+use App\Models\Product; // Import model Product
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $menus = Menu::all(); // Mengambil semua data dari tabel menus
-        return view('products.index', compact('menus')); // Kirim data ke view
+        $search = $request->input('search');
+
+        // Ambil produk berdasarkan pencarian
+        $products = Product::when($search, function ($query, $search) {
+            return $query->where('nama_menu', 'like', '%' . $search . '%');
+        })->get();
+
+        return view('products.index', compact('products'));
     }
 }
