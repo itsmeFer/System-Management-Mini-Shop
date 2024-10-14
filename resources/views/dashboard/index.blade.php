@@ -86,7 +86,7 @@
                 <div class="col-md-6">
                     <div class="card text-white bg-info mb-3">
                         <div class="card-body">
-                            <h5 class="card-title">New Orders</h5>
+                            <h5 class="card-title">Orders Today</h5>
                             <p class="card-text">25 Orders</p>
                         </div>
                     </div>
