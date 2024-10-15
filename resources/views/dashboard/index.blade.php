@@ -91,14 +91,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card text-white bg-warning mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Pending Orders</h5>
-                            <p class="card-text">5 Orders</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </main>
     </div>
